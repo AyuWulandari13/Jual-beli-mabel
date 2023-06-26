@@ -1,70 +1,81 @@
-body{
+body {
     margin: 0;
+    padding: 0%;
+    outline: none;
+    box-sizing: border-box;
+    font font-family: 'Montserrat', sans-serif;
 }
-
+body{
+background: #f2f2f2 ;
+}
 nav{
-    background-color: aqua;
-    height: 44px;
+background: #ffad4f;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: space-between;
+height: 70px;
+padding: 0 100px;
+}
+nav .logo{
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+nav .nav-items{
     display: flex;
-    justify-content: space-between;
+    flex: 1;
+    list-style: none;
+    padding: 0 0 0 40px;
 }
-
-nav a{
- text-decoration: none;
+nav .nav-items li{
+    padding: 0 15px;
 }
-
-nav div{
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-nav img{
-    height: 100%;
-}
-
-nav > div >img{
-    height: 70%;
-}
-
-nav > img {
-    height: 200%;
-    z-index: 2;
-}
-
-van .menu > a{
-    padding: 0 8px;
-    height: 100% ;
-    display: flex;
-    align-items: center ;
+nav .nav-items li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
     text-decoration: none;
-    color: black;
 }
-
-.judul {
-    background-color: chocolate;
-    text-align: center;
-    color:white;
+nav .nav-items li a:hover{
+    color: #000;
 }
-
-#hero {
-    height: 80vh;
-    overflow: hidden;
-    position: relative;
+nav form{
+    display: flex;
+    height: 40px;
+    border-radius: 2px;
+    padding: 2px;
+    background: #1e232b;
+    min-width: 18%!important;
+    border: 1px solid rgb(155, 155, 155, 0.2)
 }
-#hero .judul {
-    background-color: coral;
-    text-align: center;
-    color: white;
-    position: absolute;
-    top: 10px;
-    width: 100%;
-    font-size: 36px;
-}
-
-#hero > img {
-    width: 100%;
+nav from .serch-data{
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+    width: 100%;
+    padding: 0 10px;
+    color: #fff;
+    font-weight: 500;
+    background: none;
+    border: none;
+}
+nav from .action{
+    padding: 0 15px;
+    background: #1f1f1d;
+    border: none;
+    cursor: pointer;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 2px;
+}
+button {
+background-color: transparent;
+border: black;
+width: 44px;
+height: 44px;
+}
+
+button:hover {
+    border: solid;
+    cursor: pointer;
 }
